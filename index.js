@@ -40,14 +40,14 @@ function nifffff() {
 
         .wait(2000)
         //.end()
-        .then(() => {
+        .then(function() {
             i++
             console.log('ok order')
             nifffff()
         }
 
         )
-        .catch((error) => {
+        .catch(function(error) {
             i++
             nifffff()
             console.error('Search failed:', error);
